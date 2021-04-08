@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang="en">
   <head>    
     <title>My Journal</title>
     <link rel="icon" type="image/png" href="favicon.png"/>
@@ -29,7 +29,7 @@
           </details>
 
           <br>
-          <img src="sza.jpg" alt="stream sza good days" height="420px">
+          <img src="sza.jpg" alt="stream sza good days" height="420">
           <br>
           <audio controls autoplay>
             <source src="gooddays.mp3" type="audio/mpeg">
@@ -77,17 +77,20 @@
         </div>
       </section>
 
-      <br>
       <section id="create">
         <form>
           <fieldset>
-            <legend><b>Create New Entry</b></legend>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname">
+            <legend><h3>Create New Entry</h3></legend>
+            <label for="title">Title:</label>
+            <input type="text" id="title">
             <br><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname">
+            <label for="subtitle">Subtitle:</label>
+            <input type="text" id="subtitle">
 
+            <br><br>
+            <label for="day">Today's date:</label>
+            <input type="date" id="day">
+            
             <p>How was your day?</p>
             <input type="checkbox" id="good" value="good">
             <label for="good">Today was a good day</label>
@@ -96,25 +99,27 @@
             <label for="bad">Today was a bad day</label>
 
             <br><br>
-            <label for="day">Today's date:</label>
-            <input type="date" id="day">
-            
+            <label for="question">Did you spend today with someone else?</label>
+            <select id="question">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
             <br><br>
             <label for="body">Write your journal entry:</label>
             <br>
-            <textarea id="body" rows="4" cols="95">I did so many fun things today!</textarea>
+            <textarea id="body" rows="5" cols="50">I did so many fun things today!</textarea>
 
             <br><br>
             <label for="rate">Rate today:</label>
-            <select id="rate">
-              <datalist id="rate">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </datalist>
-            </select>
+            <input list="ratings" id="rate">
+            <datalist id="ratings">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+            </datalist>
 
             <br><br>
             <input type="radio" id="confirm">
