@@ -1,3 +1,3 @@
-# CSE 110 Lab 2
+# sp21-cse110-lab3
 
-https://lynguyxn.github.io/cse110-lab2/
+https://lynguyxn.github.io/sp21-cse110-lab3/
