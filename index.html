@@ -4,17 +4,30 @@
     <link rel="stylesheet" href="index.css">    
     
     <style>
-      /* Navigation bar styling */
+      /* basic navigation bar styling */
       body {
         background-color: rgb(250, 240, 230);
       }
 
       h1 {
         color: hsl(0, 100%, 25%);
+        font-family: 'lobsterregular';
+      }
+
+      a:hover {
+        color: teal;
       }
 
       a {
         color: sienna;
+      }
+
+      h2 {
+        text-decoration: maroon wavy underline;
+      }
+
+      h3 {
+        color: #a0522d;
       }
       </style>
     
@@ -32,127 +45,129 @@
       </nav>
     </header>
     <hr>
-    <main>
-      <section id="today" class="entrybox">
-        <div class="entrytitle">
-          <h2>Today 4/7/2021</h2>
-          <h3>Alexa, play Good Day by SZA</h3>
-        </div>
-        <div class="entry">
-          <p>Today was <span>amazing</span>. I got food and boba with my friends! We feasted on some delicious Korean chicken, and sheeeeeeeeeeeesh let me tell ya, honeydew green tea is <strong>BUSSIN</strong>. If you never tried honeydew green tea, I don't even know you. Afterwards, we went shopping and I may have spent <em>a little</em> too much... but it's okay because the stimulus checks got my back!! Time to post a clothing haul on TikTok to get clout yuhhhhh. Definitely could get Charli D'Amelio level of famous. Gotta get back on that study grind though. CSE 110 sure is tough! I do hope I pass all my classes and get a perfect 4.0 throughout my entire college career. Too ez. You heard it here first ladies and gentlemen.</p>
+    <div id="content">
+      <main id="entries">
+        <section id="today" class="entrybox">
+          <div class="entrytitle">
+            <h2>Today 4/7/2021</h2>
+            <h3>Alexa, play Good Day by SZA</h3>
+          </div>
+          <div class="entry">
+            <p>Today was <span>amazing</span>. I got food and boba with my friends! We feasted on some delicious Korean chicken, and sheeeeeeeeeeeesh let me tell ya, honeydew green tea is <strong>BUSSIN</strong>. If you never tried honeydew green tea, I don't even know you. Afterwards, we went shopping and I may have spent <em>a little</em> too much... but it's okay because the stimulus checks got my back!! Time to post a clothing haul on TikTok to get clout yuhhhhh. Definitely could get Charli D'Amelio level of famous. Gotta get back on that study grind though. CSE 110 sure is tough! I do hope I pass all my classes and get a perfect 4.0 throughout my entire college career. Too ez. You heard it here first ladies and gentlemen.</p>
 
-          <details>
-            <summary><b>Summary</b></summary>
-            <p>Go get honeydew green tea RIGHT NOW</p>
-          </details>
+            <details>
+              <summary><b>Summary</b></summary>
+              <p>Go get honeydew green tea RIGHT NOW</p>
+            </details>
 
-          <br>
-          <img src="sources/sza.jpg" alt="stream sza good days" height="420">
-          <br>
-          <audio controls autoplay>
-            <source src="sources/gooddays.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
-        </div>
-      </section>
-
-      <hr>
-      <section id="yesterday" class="entrybox">
-        <h2>Yesterday 4/6/2021</h2>
-        <h3>I am the BOBA CONNOISSEUR</h3>
-        <div class="entry">
-          <p>WOW! I got <strong>FIVE BOBAS</strong> today!! I love bubble tea!!!! They make me so happy when I drink them. I wish I could drink them forever without having to worry about diabetes. Some people just don't know <strong><em>WHAT'S UP</em></strong> with bubble tea. Real gooodddd shiii that's what. There's so much more bubble teas I have not yet tried. My life mission is to conquer every boba spot there is to exist on planet Earth. Even the same drink tastes different if you get them at different locations. Some people's boba taste is very questionable. I am concerned for this world's boba future. I shall bless this journal entry with my boba recommendations.
-          </p>
-
-          <p><b>Boba Recommendations</b></p>
-          <ul>
-            <li>White Peach Oolong</li>
-            <li>Jade <i>from Tisane</i></li>
-            <li>GTA <i>from Tisane</i></li>
-            <li>Strawberry de Leche <i>from 85 Degrees</i></li>
-            <li>Jasmine Green Tea with Salted Cheese <i>from Happy Lemon</i></li>
-          </ul>
-        </div>
-      </section>
-
-      <hr>
-      <section id="before" class="entrybox">
-        <h2>Before Yesterday 4/5/2021</h2>
-        <h3>school is tough and rough</h3>
-        <div class="entry">
-          <p>I am so busy and tired! Work is piling up, and it's only downhill from here. That's crazy. Too many tests and too many assignments I cannot handle. Someone free me from this living hell. My motivation said nope peace out. I just want summer to come already so I can chill ya feel. Chilling is cool. School is not cool. I guess I could write down my to-do list, even though I'm obviously too lazy to do them.</p>
-          <p><b>To-do's</b></p>
-          <ol>
-            <li>Get an A in all my classes</li>
-            <li>Secure a FAANG internship just because I'm so amazingly talented</li>
-            <li>Make so much money I can drop a couple of grand on stonks</li>
-          </ol>
-          <video width="320" height="240" controls>
-            <source src="sources/zenzenzense.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-          <br>
-        </div>
-      </section>
-
-      <hr>
-      <section id="create">
-        <form>
-          <fieldset>
-            <legend><h3>Create New Entry</h3></legend>
-            <label for="title">Title:</label>
-            <input type="text" id="title">
-            <br><br>
-            <label for="subtitle">Subtitle:</label>
-            <input type="text" id="subtitle">
-
-            <br><br>
-            <label for="day">Today's date:</label>
-            <input type="date" id="day">
-            
-            <p>How was your day?</p>
-            <input type="checkbox" id="good" value="good">
-            <label for="good">Today was a good day</label>
             <br>
-            <input type="checkbox" id="bad" value="bad">
-            <label for="bad">Today was a bad day</label>
-
-            <br><br>
-            <label for="question">Did you spend today with someone else?</label>
-            <select id="question">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-
-            <br><br>
-            <label for="body">Write your journal entry:</label>
+            <img src="sources/sza.jpg" alt="stream sza good days" height="420">
             <br>
-            <textarea id="body" rows="5" cols="50">I did so many fun things today!</textarea>
+            <audio controls autoplay>
+              <source src="sources/gooddays.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+          </div>
+        </section>
 
-            <br><br>
-            <label for="rate">Rate today:</label>
-            <input list="ratings" id="rate">
-            <datalist id="ratings">
-              <option value="1">
-              <option value="2">
-              <option value="3">
-              <option value="4">
-              <option value="5">
-            </datalist>
+        
+        <section id="yesterday" class="entrybox">
+          <h2>Yesterday 4/6/2021</h2>
+          <h3>I am the BOBA CONNOISSEUR</h3>
+          <div class="entry">
+            <p>WOW! I got <strong>FIVE BOBAS</strong> today!! I love bubble tea!!!! They make me so happy when I drink them. I wish I could drink them forever without having to worry about diabetes.
+              <p style="display: block; background-color: turquoise;">Some people just don't know <strong><em>WHAT'S UP</em></strong> with bubble tea.</p>
+              Real gooodddd shiii that's what. There's so much more bubble teas I have not yet tried. My life mission is to conquer every boba spot there is to exist on planet Earth. Even the same drink tastes different if you get them at different locations. Some people's boba taste is very questionable. I am concerned for this world's boba future. I shall bless this journal entry with my boba recommendations.
+            </p>
 
-            <br><br>
-            <input type="radio" id="confirm">
-            <label for="confirm">I confirm everything is correct.</label><br>
+            <p><b>Boba Recommendations</b></p>
+            <ul>
+              <li>White Peach Oolong</li>
+              <li>Jade <i>from Tisane</i></li>
+              <li>GTA <i>from Tisane</i></li>
+              <li>Strawberry de Leche <i>from 85 Degrees</i></li>
+              <li>Jasmine Green Tea with Salted Cheese <i>from Happy Lemon</i></li>
+            </ul>
+          </div>
+        </section>
+
+        
+        <section id="before" class="entrybox">
+          <h2>Before Yesterday 4/5/2021</h2>
+          <h3>school is tough and rough</h3>
+          <div class="entry">
+            <p>I am so busy and tired! Work is piling up, and it's only downhill from here. That's crazy. Too many tests and too many assignments I cannot handle. Someone free me from this living hell. My motivation said nope peace out. I just want summer to come already so I can chill ya feel. Chilling is cool. School is not cool. I guess I could write down my to-do list, even though I'm obviously too lazy to do them.</p>
+            <p><b>To-do's</b></p>
+            <ol>
+              <li>Get an A in all my classes</li>
+              <li>Secure a FAANG internship just because I'm so amazingly talented</li>
+              <li>Make so much money I can drop a couple of grand on stonks</li>
+            </ol>
+            <video width="320" height="240" controls>
+              <source src="sources/zenzenzense.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
             <br>
-            <button>Submit</button>
-          </fieldset>
-        </form>
-      </section>
-    </main>
+          </div>
+        </section>
+      </main>
 
-    <footer>
-      <br>
-      ©Copyright 2021. All rights reserved.
-    </footer>
+        <section id="create">
+          <form>
+            <fieldset>
+              <legend><h3>Create New Entry</h3></legend>
+              <label for="title">Title:</label>
+              <input type="text" id="title">
+              <br><br>
+              <label for="subtitle">Subtitle:</label>
+              <input type="text" id="subtitle">
+
+              <br><br>
+              <label for="day">Today's date:</label>
+              <input type="date" id="day">
+              
+              <p>How was your day?</p>
+              <input type="checkbox" id="good" value="good">
+              <label for="good">Today was a good day</label>
+              <br>
+              <input type="checkbox" id="bad" value="bad">
+              <label for="bad">Today was a bad day</label>
+
+              <br><br>
+              <label for="question">Did you spend today with someone else?</label>
+              <select id="question">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+              </select>
+
+              <br><br>
+              <label for="body">Write your journal entry:</label>
+              <br>
+              <textarea id="body" rows="5" cols="50">I did so many fun things today!</textarea>
+
+              <br><br>
+              <label for="rate">Rate today:</label>
+              <input list="ratings" id="rate">
+              <datalist id="ratings">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+              </datalist>
+
+              <br><br>
+              <input type="radio" id="confirm">
+              <label for="confirm">I confirm everything is correct.</label><br>
+              <br>
+              <button>Submit</button> <p style="display: none;">If you see this you're cool</p>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+      <footer style="text-align: center;">
+        <br>
+        ©Copyright 2021. All rights reserved.
+      </footer>
   </body>
 </html>

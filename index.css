@@ -1,4 +1,39 @@
+/* CSS Stylesheet for index.html */
+
+@font-face {
+  font-family: 'lobsterregular';
+  src: url('fonts/lobster-regular-webfont.woff2') format('woff2'),
+       url('fonts/lobster-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* submit button changes color on submit */
+button:active {
+  background-color: turquoise;
+}
+
+/* contains all the entries in a flex box */
+#entries {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#content {
+  display: grid;
+  grid-template-areas:
+    'menu main main main main main'
+    'menu main main main main main';
+  /* add 2 grid properties */
+}
+
+/* navigation bar placement */
 .navbar {
+  position: relative;
   text-align: center;
   margin-top: 35px;
   margin-bottom: 25px;
@@ -11,11 +46,10 @@
   border-radius: 40px;
 }
 
-h3 {
-  color: #a0522d;
-}
-
+/* individual entry containers */
 .entrybox {
+  position: static;
+  max-width: 30%;
   margin: 1.5em 2em 1.5em 2em;
   border-style: double;
   border-color: teal;
@@ -23,7 +57,9 @@ h3 {
   border-width: 3px;
 }
 
+/* create entry container */
 #create {
-  width: 25%;
-  margin: auto 2em;
+  grid-area: menu;
+  width: 30%;
+  margin: 0em 2em;
 }
