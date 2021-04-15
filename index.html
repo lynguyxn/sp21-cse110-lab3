@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>    
+  <head>
+    <link rel="stylesheet" href="index.css">    
+    
+    <style>
+      /* Navigation bar styling */
+      body {
+        background-color: rgb(250, 240, 230);
+      }
+
+      h1 {
+        color: hsl(0, 100%, 25%);
+      }
+
+      a {
+        color: sienna;
+      }
+      </style>
+    
     <title>My Journal</title>
     <link rel="icon" type="image/png" href="sources/favicon.png"/>
     <meta name="author" content="Ly Nguyen">
@@ -9,17 +26,18 @@
     
   <body>
     <header>
-      <nav>
+      <nav class = "navbar">
         Navigation: <a href="#today">View Journal Entries</a> | <a href="#create">Create New Entry</a>
         <h1>My Journal</h1>
-        <hr>
       </nav>
     </header>
-
+    <hr>
     <main>
-      <section id="today">
-        <h2>Today 4/7/2021</h2>
-        <h3>Alexa, play Good Day by SZA</h3>
+      <section id="today" class="entrybox">
+        <div class="entrytitle">
+          <h2>Today 4/7/2021</h2>
+          <h3>Alexa, play Good Day by SZA</h3>
+        </div>
         <div class="entry">
           <p>Today was <span>amazing</span>. I got food and boba with my friends! We feasted on some delicious Korean chicken, and sheeeeeeeeeeeesh let me tell ya, honeydew green tea is <strong>BUSSIN</strong>. If you never tried honeydew green tea, I don't even know you. Afterwards, we went shopping and I may have spent <em>a little</em> too much... but it's okay because the stimulus checks got my back!! Time to post a clothing haul on TikTok to get clout yuhhhhh. Definitely could get Charli D'Amelio level of famous. Gotta get back on that study grind though. CSE 110 sure is tough! I do hope I pass all my classes and get a perfect 4.0 throughout my entire college career. Too ez. You heard it here first ladies and gentlemen.</p>
 
@@ -39,7 +57,7 @@
       </section>
 
       <hr>
-      <section id="yesterday">
+      <section id="yesterday" class="entrybox">
         <h2>Yesterday 4/6/2021</h2>
         <h3>I am the BOBA CONNOISSEUR</h3>
         <div class="entry">
@@ -58,7 +76,7 @@
       </section>
 
       <hr>
-      <section id="before">
+      <section id="before" class="entrybox">
         <h2>Before Yesterday 4/5/2021</h2>
         <h3>school is tough and rough</h3>
         <div class="entry">
@@ -77,7 +95,8 @@
         </div>
       </section>
 
-      <section id="create">
+      <hr>
+      <section id="create" class="createbox">
         <form>
           <fieldset>
             <legend><h3>Create New Entry</h3></legend>
@@ -132,7 +151,7 @@
     </main>
 
     <footer>
-      <hr>
+      <br>
       ©Copyright 2021. All rights reserved.
     </footer>
   </body>
