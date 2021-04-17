@@ -9,25 +9,30 @@
         background-color: rgb(250, 240, 230);
       }
 
-      h1 {
+      .navbar > h1 {
         color: hsl(0, 100%, 25%);
         font-family: 'lobsterregular';
       }
 
-      a:hover {
+      .navbar a:hover {
         color: teal;
       }
 
-      a {
-        color: sienna;
+      a,  h3[attribute="subtitle"] {
+        color: #a0522d;
       }
 
       h2 {
+        color: black;
         text-decoration: maroon wavy underline;
       }
 
-      h3 {
-        color: #a0522d;
+      span ~ strong {
+        background-color: turquoise;
+      }
+
+      h2 + h3 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
       </style>
     
@@ -50,7 +55,7 @@
         <section id="today" class="entrybox">
           <div class="entrytitle">
             <h2>Today 4/7/2021</h2>
-            <h3>Alexa, play Good Day by SZA</h3>
+            <h3 attribute="subtitle">Alexa, play Good Day by SZA</h3>
           </div>
           <div class="entry">
             <p>Today was <span>amazing</span>. I got food and boba with my friends! We feasted on some delicious Korean chicken, and sheeeeeeeeeeeesh let me tell ya, honeydew green tea is <strong>BUSSIN</strong>. If you never tried honeydew green tea, I don't even know you. Afterwards, we went shopping and I may have spent <em>a little</em> too much... but it's okay because the stimulus checks got my back!! Time to post a clothing haul on TikTok to get clout yuhhhhh. Definitely could get Charli D'Amelio level of famous. Gotta get back on that study grind though. CSE 110 sure is tough! I do hope I pass all my classes and get a perfect 4.0 throughout my entire college career. Too ez. You heard it here first ladies and gentlemen.</p>
@@ -73,7 +78,7 @@
         
         <section id="yesterday" class="entrybox">
           <h2>Yesterday 4/6/2021</h2>
-          <h3>I am the BOBA CONNOISSEUR</h3>
+          <h3 attribute="subtitle">I am the BOBA CONNOISSEUR</h3>
           <div class="entry">
             <p>WOW! I got <strong>FIVE BOBAS</strong> today!! I love bubble tea!!!! They make me so happy when I drink them. I wish I could drink them forever without having to worry about diabetes.
               <p style="display: block; background-color: turquoise;">Some people just don't know <strong><em>WHAT'S UP</em></strong> with bubble tea.</p>
@@ -94,7 +99,7 @@
         
         <section id="before" class="entrybox">
           <h2>Before Yesterday 4/5/2021</h2>
-          <h3>school is tough and rough</h3>
+          <h3 attribute="subtitle">school is tough and rough</h3>
           <div class="entry">
             <p>I am so busy and tired! Work is piling up, and it's only downhill from here. That's crazy. Too many tests and too many assignments I cannot handle. Someone free me from this living hell. My motivation said nope peace out. I just want summer to come already so I can chill ya feel. Chilling is cool. School is not cool. I guess I could write down my to-do list, even though I'm obviously too lazy to do them.</p>
             <p><b>To-do's</b></p>
@@ -115,7 +120,7 @@
         <section id="create">
           <form>
             <fieldset>
-              <legend><h3>Create New Entry</h3></legend>
+              <legend><h3 style="color: maroon;">Create New Entry</h3></legend>
               <label for="title">Title:</label>
               <input type="text" id="title">
               <br><br>

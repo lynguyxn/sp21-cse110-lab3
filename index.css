@@ -16,6 +16,10 @@
   }
 }
 
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 /* submit button changes color on submit */
 button:active {
   background-color: turquoise;
@@ -35,7 +39,7 @@ button:active {
   grid-template-areas:
     'menu main main main main main'
     'menu main main main main main';
-  grid-template-columns: 30%;
+  gap: auto 10px;
   /* grid-area property used in other sections */
 }
 
@@ -68,6 +72,6 @@ button:active {
 /* create entry container */
 #create {
   grid-area: menu;
-  width: 30%;
+  max-width: 30%;
   margin: 0em 2em;
 }
